@@ -1,8 +1,29 @@
 /* 1st Kata 
 
-function helloWorld() {
-  var str="Hello World!"
-  console.log(str)
+function getLength(arr){
+  //return length of arr
+  return arr.length
+}
+function getFirst(arr){
+  //return the first element of arr
+  var items = list.slice(0, size)
+  return items
+}
+function getLast(arr){
+  //return the last element of arr
+  var items = list.slice(0, size)
+  return items
+}
+function pushElement(arr){
+  var el=1;
+  //push el to arr
+  arr.push(el)
+  return arr
+}
+function popElement(arr){
+  //pop an element from arr
+  arr.pop()
+  return arr
 }
 
 */
@@ -10,32 +31,17 @@ function helloWorld() {
 /* 2nd Kata
 
 
-var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
-function equal1(){
-  var a=v1   
-  var b=v1   
-  return a+b;
-}
-//Please refer to the example above to complete the following functions
-function equal2(){
-  var a=v3  //set number value to a
-  var b=v1  //set number value to b
-  return a-b;
-}
-function equal3(){
-  var a=v1   //set number value to a
-  var b=v5   //set number value to b
-  return a*b;
-}
-function equal4(){
-  var a= v4  //set number value to a
-  var b= v5  //set number value to b
-  return a/b;
-}
-function equal5(){
-  var a=v6  //set number value to a
-  var b= v3  //set number value to b
-  return a%b;
+function grabDoll(dolls){
+  var bag=[];
+  for(var i = 0; i < dolls.length; i++) {
+    if(dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll")
+      bag.push(dolls[i]);
+    else
+      continue;
+      
+    if(bag.length === 3) break;
+  }
+  return bag;
 }
 
 */
@@ -44,33 +50,8 @@ function equal5(){
 
 /* 3rd Kata
 
-
-var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
-function Dad(){
-  //select some variable to combine "Dad"
-  return d1+a2+d2;
-}
-function Bee(){
-  //select some variable to combine "Bee"
-  return b1+e2+e2;
-}
-function banana(){
-  //select some variable to combine "banana"
-  return b2+a2+n2+a2+n2+a2;
-}
-
-//answer some questions if you finished works above
-function answer1(){
-  //the answer should be "yes" or "no"
-  return "no";
-}
-function answer2(){
-  //the answer should be "yes" or "no"
-  return "no";
-}
-function answer3(){
-  //the answer should be "yes" or "no"
-  return "yes";
+function DNAtoRNA(dna) {
+  return dna.split("T").join("U");
 }
 
 */
@@ -80,34 +61,24 @@ function answer3(){
 
 /* 4th Kata
 
-function trueOrFalse(val){
-  if (val == false)  {  
-    return ("false");             
-  } else if (val == undefined) {
-    return ("false");
-  } else if (val == null) {
-    return ("false");
-  } else {
-    return ("true");
-  }  
+function splitAndMerge(str,sp){
+  var words = str.split(" ");
+  var arr =[];
+  var res = []
+  for(i=0;i<words.length;i++){
+   arr.push(words[i].split("").join(sp));
+  }
+  res = arr.join(" ");
+  return res;
+  
 }
-
 */
 
 /* 5th Kata
 
-var stringToNumber = function(str){
-  return parseInt(str, 10);
-}
+Не можу розібратись
 
 */
 
 
-/*6th Kata
 
-
-function booleanToString(b){
-  return b ? 'true' : 'false';
-}
-
-*/
